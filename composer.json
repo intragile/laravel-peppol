@@ -1,0 +1,37 @@
+{
+    "name": "intragile/laravel-peppol",
+    "description": "Laravel Peppol: send and receive Peppol BIS Billing 3.0 e-invoices through an access point (Recommand, B2Brouter, e-invoice.be) with queued sending, webhooks and validation, on top of intragile/laravel-einvoicing.",
+    "keywords": [
+        "laravel",
+        "peppol",
+        "peppol-bis",
+        "e-invoicing",
+        "einvoice",
+        "en16931",
+        "as4",
+        "access-point",
+        "recommand",
+        "b2brouter",
+        "e-invoice-be"
+    ],
+    "type": "metapackage",
+    "license": "MIT",
+    "homepage": "https://intragile.eu",
+    "support": {
+        "issues": "https://github.com/intragile/laravel-peppol/issues",
+        "source": "https://github.com/intragile/laravel-peppol"
+    },
+    "authors": [
+        {
+            "name": "IntrAgile Kft.",
+            "email": "info@intragile.eu",
+            "homepage": "https://intragile.eu"
+        }
+    ],
+    "require": {
+        "intragile/laravel-einvoicing": "^1.0",
+        "php": "^8.3"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
