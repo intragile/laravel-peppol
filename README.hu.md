@@ -15,7 +15,7 @@ Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvo
 
 ## Követelmények
 
-- PHP 8.3+ a `dom`, `libxml` és `mbstring` kiterjesztéssel
+- PHP 8.3+ a `dom`, `libxml`, `mbstring` és `zlib` kiterjesztéssel
 - Laravel 12 vagy 13
 
 ## Telepítés
@@ -60,7 +60,7 @@ EInvoicing::send($xml, reference: 'INV-2026-0002', transport: 'b2brouter');
 $message->state;   // OutboundState: queued, sending, sent, delivered, ...
 ```
 
-A számla maga hordozza az útválasztást (feladó, címzett, folyamat), és Peppol BIS Billing 3.0 (vagy Peppolon küldött XRechnung) kell legyen; a `send()` minden mást elutasít. Egy ismeretlen kimenetelű küldést a csomag soha nem küld újra magától.
+A számla maga hordozza az útválasztást (feladó, címzett, folyamat), és Peppol BIS Billing 3.0 (vagy Peppolon küldött XRechnung) kell legyen; a `send()` minden mást elutasít. Egy ismeretlen kimenetelű küldést a csomag soha nem küld újra magától. A számlák fogadása (aláírt webhookok, vagy lekérdezés a `php artisan einvoicing:poll-inbound` paranccsal) a [laravel-einvoicing dokumentációjában](https://github.com/intragile/laravel-einvoicing#fogadás) van leírva.
 
 ## Driverek
 

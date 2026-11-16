@@ -15,7 +15,7 @@ This is a thin metapackage: it has no code of its own and pulls in [`intragile/l
 
 ## Requirements
 
-- PHP 8.3+ with `dom`, `libxml`, `mbstring`
+- PHP 8.3+ with `dom`, `libxml`, `mbstring`, `zlib`
 - Laravel 12 or 13
 
 ## Quick start
@@ -60,7 +60,7 @@ EInvoicing::send($xml, reference: 'INV-2026-0002', transport: 'b2brouter');
 $message->state;   // OutboundState: queued, sending, sent, delivered, ...
 ```
 
-The invoice carries its own routing (sender, receiver, process) and must be Peppol BIS Billing 3.0 (or an XRechnung sent over Peppol); `send()` refuses anything else. A send whose outcome is unknown is never resent automatically.
+The invoice carries its own routing (sender, receiver, process) and must be Peppol BIS Billing 3.0 (or an XRechnung sent over Peppol); `send()` refuses anything else. A send whose outcome is unknown is never resent automatically. Receiving invoices (signed webhooks, or polling with `php artisan einvoicing:poll-inbound`) is covered in the [laravel-einvoicing documentation](https://github.com/intragile/laravel-einvoicing#receiving).
 
 ## Drivers
 
