@@ -22,13 +22,13 @@ Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvo
 
 ```bash
 composer require intragile/laravel-peppol
-php artisan migrate
 ```
 
 Telepítsd a Peppol BIS validációs szabályokat, és add meg az alapértelmezett transport hozzáférési adatait (a Recommand látható; a B2Brouter és az e-invoice.be ugyanígy állítható be, lásd a teljes dokumentációt):
 
 ```bash
 php artisan einvoicing:install-rules
+php artisan migrate   # létrehozza a két táblát
 ```
 
 ```dotenv

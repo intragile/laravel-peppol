@@ -22,13 +22,13 @@ This is a thin metapackage: it has no code of its own and pulls in [`intragile/l
 
 ```bash
 composer require intragile/laravel-peppol
-php artisan migrate
 ```
 
 Install the Peppol BIS validation rules and give the default transport its credentials (Recommand shown; B2Brouter and e-invoice.be are configured the same way, see the full documentation):
 
 ```bash
 php artisan einvoicing:install-rules
+php artisan migrate   # create the two tables
 ```
 
 ```dotenv
