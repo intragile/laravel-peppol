@@ -9,7 +9,7 @@ Fejlesztő és karbantartó: [IntrAgile Kft.](https://intragile.eu)
 
 Peppol Laravelhez: Peppol BIS Billing 3.0 számlák küldése és fogadása access pointon keresztül, sorba állított küldéssel, aláírt webhookokkal és validációval minden küldés előtt.
 
-Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvoicing`](https://github.com/intragile/laravel-einvoicing) csomagot húzza be a használati esethez szükséges szabálycsomaggal együtt, hogy könnyen megtaláld. A teljes funkcionalitás ott van dokumentálva.
+Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvoicing`](https://github.com/intragile/laravel-einvoicing) csomagot húzza be, hogy könnyen megtaláld; a szabálycsomagokat az integráció hozza. A teljes funkcionalitás ott van dokumentálva.
 
 [English documentation → README.md](README.md)
 

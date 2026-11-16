@@ -9,7 +9,7 @@ Developed and maintained by [IntrAgile Kft.](https://intragile.eu)
 
 Peppol for Laravel: send and receive Peppol BIS Billing 3.0 invoices through an access point, with queued sending, signed webhooks and validation before every send.
 
-This is a thin metapackage: it has no code of its own and pulls in [`intragile/laravel-einvoicing`](https://github.com/intragile/laravel-einvoicing) together with the rule package this use case needs, so that you can find it. The full functionality is documented there.
+This is a thin metapackage: it has no code of its own and pulls in [`intragile/laravel-einvoicing`](https://github.com/intragile/laravel-einvoicing) so that you can find it; the bridge brings the rule packages. The full functionality is documented there.
 
 [Magyar nyelvű leírás → README.hu.md](README.hu.md)
 
